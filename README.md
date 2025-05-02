@@ -31,16 +31,18 @@ Este projeto implementa um sistema de Perguntas e Respostas (RAG) que:
 
 - Abra o CMD (command prompt) no diretório do projeto
 - Crie o ambiente virtual inserindo as linhas de códigos:
-- DICA: Execute o arquivo Start.bat para inicializar o terminal com maior facilidade.
 ```
 python -m venv rag_env
-rag_env\Scripts\activate 
+rag_env\Scripts\activate
+```
+- DICA: Execute o arquivo Start.bat para inicializar o terminal com maior facilidade.
+- Após inicialização do ambiente, vamos instalar todas as depedências:
+```
 pip install fastapi uvicorn faiss-cpu langchain langchain-community langchain-ollama gradio
 ```
 
-Após criado o ambiente virtual, vamos instalar o modelo mistral no Ollama.
+- Após criado o ambiente virtual, vamos instalar o modelo mistral no Ollama.
 
-## Instale o modelo no Ollama:
 ```bash
 ollama pull mistral
 ```
@@ -99,7 +101,7 @@ from pydantic import BaseModel
 
 ---
 ## Exemplo de uso
-O documento a ser indexado (dados.txt) é um documento com explicações gerais sobre IA's Large Language Models (LLM). Você pode fazer perguntas seguindo este modelo:
+O documento a ser indexado (dados.txt) é um documento com definições gerais sobre IA's Large Language Models (LLM). Você pode fazer perguntas seguindo este modelo:
 - Qual o significado de LLM?
 - Cite alguns exemplos de aplicações de uma LLM
 - Como funcionam as LLMs?
