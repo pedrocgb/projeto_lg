@@ -96,19 +96,23 @@ from pydantic import BaseModel
 ```
 
 ---
-Exemplo de uso
+## Exemplo de uso
+O documento a ser indexado (dados.txt) é um documento com explicações gerais sobre Large Language Models (LLM), você pode fazer perguntas seguindo este modelo:
+- Qual o significado de LLM?
+- Cite alguns exemplos de aplicações de uma LLM
+- Como funcionam as LLMs?
 
 ### Requisição:
 ```json
 POST /question
 {
-  "question": "Qual o prazo para reembolso?"
+  "question": "Como funcionam as LLMs?"
 }
 ```
 
 ### Resposta:
 ```json
 {
-  "answer": "O prazo para reembolso é de até 30 dias após a compra..."
+  "answer": "As LLMs têm uma ampla gama de aplicações, incluindo: tradução automática, resumo de textos, analise de sentimentos em textos, assistência pessoal virtual e assistência às empresas. Além disso, eles também podem ser usados para gerar conteúdos como notícias, artigos e histórias."
 }
 ```
