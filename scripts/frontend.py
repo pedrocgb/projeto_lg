@@ -42,4 +42,4 @@ gr.Interface(
     outputs="text",
     title="Assistente RAG",
     description="Digite sua pergunta sobre os documentos e receba uma resposta gerada pelo modelo local.",
-).launch(server_name="0.0.0.0")
+).launch()
