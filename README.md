@@ -10,7 +10,7 @@ Este projeto implementa um sistema de Perguntas e Respostas (RAG) que:
 ---
 ### Requisitos
 
-- Python 3.11+
+- [Python 3.11+](https://www.python.org/downloads/)
 - [Ollama](https://ollama.com/download) instalado e com modelo (`mistral`) baixado
 
 ---
@@ -31,18 +31,16 @@ Este projeto implementa um sistema de Perguntas e Respostas (RAG) que:
 
 - Abra o CMD (command prompt) no diretório do projeto
 - Crie o ambiente virtual inserindo as linhas de códigos:
+- DICA: Execute o arquivo Start.bat para inicializar o terminal com maior facilidade.
 ```
 python -m venv rag_env
 rag_env\Scripts\activate
 ```
-- DICA: Execute o arquivo Start.bat para inicializar o terminal com maior facilidade.
 - Após inicialização do ambiente, vamos instalar todas as depedências:
 ```
 pip install fastapi uvicorn faiss-cpu langchain langchain-community langchain-ollama gradio
 ```
-
 - Após criado o ambiente virtual, vamos instalar o modelo mistral no Ollama.
-
 ```bash
 ollama pull mistral
 ```
@@ -50,14 +48,21 @@ ollama pull mistral
 ---
 
 ### Indexar documentos (ingestão)
-
-Antes de usar a API ou interface, indexe seus documentos:
+Para utilização desta IA, você primeiro precisa fazer a ingestão do documento (dados.txt).
+Para isso. rodamos o script ingest.py, ele é responsável pelo indexamento do documento.
+Esse comando deve ser utilizado dentro da pasta scripts.
 
 ```bash
 python ingest.py
 ```
 
 ---
+Para a utilização dessa IA, você possui 3 alternativas de interface, sendo elas:
+- CLI (terminal)
+- Fast API (interface simples)
+- Gradio (interface mais robusta)
+Escolha umas delas e rode usando seu respectivo script.
+Lembrando que eles devem ser utilizados dentro da pasta scripts.
 
 ### Usar via API (FastAPI)
 
