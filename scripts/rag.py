@@ -29,7 +29,7 @@ def main():
         return_source_documents=False
     )
 
-    print("🔎 Digite sua pergunta (ou 'sair' para encerrar):\n")
+    print("Digite sua pergunta (ou 'sair' para encerrar):\n")
     while True:
         pergunta = input("Pergunta: ")
         if pergunta.strip().lower() in ["sair", "exit", "quit"]:
