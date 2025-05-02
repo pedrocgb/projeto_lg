@@ -34,7 +34,7 @@ qa = RetrievalQA.from_chain_type(
 )
 
 def responder_gradio(pergunta):
-    return qa.run(pergunta)
+    return qa.invoke({"query": pergunta})
 
 gr.Interface(
     fn=responder_gradio,

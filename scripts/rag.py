@@ -34,7 +34,7 @@ def main():
         pergunta = input("Pergunta: ")
         if pergunta.strip().lower() in ["sair", "exit", "quit"]:
             break
-        resposta = qa.run(pergunta)
+        resposta = qa.invoke({"query": pergunta})
         print("Resposta:", resposta)
 
 if __name__ == "__main__":
