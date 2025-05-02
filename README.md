@@ -29,10 +29,9 @@ Este projeto implementa um sistema de Perguntas e Respostas (RAG) que:
 
 ## Instalação (passo a passo)
 
-# Abra o CMD (command prompt) no diretório do projeto
-# Crie o ambiente virtual inserindo as linhas de códigos:
-
-# DICA: Execute o arquivo Start.bat para inicializar o terminal com maior facilidade.
+- Abra o CMD (command prompt) no diretório do projeto
+- Crie o ambiente virtual inserindo as linhas de códigos:
+- DICA: Execute o arquivo Start.bat para inicializar o terminal com maior facilidade.
 ```
 python -m venv rag_env
 rag_env\Scripts\activate 
@@ -41,7 +40,7 @@ pip install fastapi uvicorn faiss-cpu langchain langchain-community langchain-ol
 
 Após criado o ambiente virtual, vamos instalar o modelo mistral no Ollama.
 
-# Instale o modelo no Ollama:
+## Instale o modelo no Ollama:
 ```bash
 ollama pull mistral
 ```
