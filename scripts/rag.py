@@ -31,11 +31,11 @@ def main():
 
     print("🔎 Digite sua pergunta (ou 'sair' para encerrar):\n")
     while True:
-        pergunta = input("💬 Pergunta: ")
+        pergunta = input("Pergunta: ")
         if pergunta.strip().lower() in ["sair", "exit", "quit"]:
             break
         resposta = qa.run(pergunta)
-        print("📎 Resposta:", resposta)
+        print("Resposta:", resposta)
 
 if __name__ == "__main__":
     main()

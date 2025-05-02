@@ -13,7 +13,7 @@ class Question(BaseModel):
 
 index_path = Path(__file__).resolve().parent.parent / "faiss_index"
 embeddings = OllamaEmbeddings(model="mistral")
-db = FAISS.load_local(str(index_path), embeddings)
+db = FAISS.load_local(str(index_path), embeddings, allow_dangerous_deserialization=True)
 retriever = db.as_retriever()
 
 prompt_template = """Você é um assistente útil e direto, que responde em português. 
