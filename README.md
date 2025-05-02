@@ -31,9 +31,11 @@ Este projeto implementa um sistema de Perguntas e Respostas (RAG) que:
 
 - Abra o CMD (command prompt) no diretório do projeto
 - Crie o ambiente virtual inserindo as linhas de códigos:
-- DICA: Execute o arquivo Start.bat para inicializar o terminal com maior facilidade.
 ```
 python -m venv rag_env
+```
+- Depois basta ativar o ambiente virtual (você também pode executar o arquivo Start.bat para inicializar o terminal com maior facilidade):
+```
 rag_env\Scripts\activate
 ```
 - Após inicialização do ambiente, vamos instalar todas as depedências:
@@ -44,6 +46,13 @@ pip install fastapi uvicorn faiss-cpu langchain langchain-community langchain-ol
 ```bash
 ollama pull mistral
 ```
+
+---
+
+### Inicializando
+Conforme descrito acima, precisamos do Ollama instalado e rodando em sua máquina.
+Após feito a instalação, certifique-se que o Ollama está aberto e rodando corretamente.
+Use o comando 'ollama serve' no terminal ou PowerShell para inicializa-lo.
 
 ---
 
