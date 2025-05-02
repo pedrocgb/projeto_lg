@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07103a50-5a42-4519-81fe-3b8195fe2374" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/projeto_lg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projeto_lg.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/frontend.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/frontend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/rag.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/rag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/dados.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/dados.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/faiss_index/index.faiss" beforeDir="false" afterPath="$PROJECT_DIR$/faiss_index/index.faiss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/faiss_index/index.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/faiss_index/index.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/ingest.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/ingest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +77,7 @@
       <updated>1746156466943</updated>
       <workItem from="1746156467964" duration="403000" />
       <workItem from="1746157005484" duration="680000" />
-      <workItem from="1746157970630" duration="268000" />
+      <workItem from="1746157970630" duration="1972000" />
     </task>
     <servers />
   </component>

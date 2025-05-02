@@ -6,7 +6,7 @@ from langchain_community.embeddings import OllamaEmbeddings
 
 def ingest(file_path: str):
     print(f"Iniciando ingestão de: {file_path}")
-    loader = TextLoader(file_path)
+    loader = TextLoader(file_path, encoding="utf-8")
     documents = loader.load()
 
     splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
